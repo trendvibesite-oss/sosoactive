@@ -1,5 +1,5 @@
 /**
- * SOSOACTIVE DIGITAL MEDIA - OFFICIAL CORE SCRIPT
+ * SOSOACTIVE DIGITAL MEDIA PLATFORM - OFFICIAL CORE SCRIPT
  * Light, ultra-performant Vanilla JavaScript for 100/100 PageSpeed
  */
 
@@ -15,23 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 2. Dark / Light Theme Toggle
+  // 2. Theme Toggle (Default is Light)
   const themeToggleBtn = document.getElementById('themeToggle');
-  const currentTheme = localStorage.getItem('sosoactive_theme') || 'dark';
+  const currentTheme = localStorage.getItem('sosoactive_theme') || 'light';
 
-  if (currentTheme === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
   }
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-      if (isLight) {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
         document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('sosoactive_theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('sosoactive_theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('sosoactive_theme', 'dark');
       }
     });
   }
@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburgerBtn.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close mobile nav when clicking any nav link
     const mobileLinks = mobileNav.querySelectorAll('a');
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
@@ -63,10 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = header.parentElement;
       const isOpen = item.classList.contains('open');
       
-      // Close all accordions
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       
-      // Toggle active one if it wasn't open
       if (!isOpen) {
         item.classList.add('open');
       }
@@ -92,21 +89,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Contact & Guest Post Form Submission Handler
-  const contactForm = document.getElementById('guestPostForm');
+  // 6. Media Contact Form Submission Handler
+  const contactForm = document.getElementById('mediaContactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const statusBox = document.getElementById('formStatus');
       if (statusBox) {
         statusBox.style.display = 'block';
-        statusBox.style.background = 'rgba(16, 185, 129, 0.15)';
-        statusBox.style.border = '1px solid #10b981';
-        statusBox.style.color = '#10b981';
+        statusBox.style.background = 'rgba(5, 150, 105, 0.1)';
+        statusBox.style.border = '1px solid #059669';
+        statusBox.style.color = '#059669';
         statusBox.style.padding = '1rem';
         statusBox.style.borderRadius = '8px';
         statusBox.style.marginTop = '1rem';
-        statusBox.innerHTML = '<strong>Success!</strong> Your guest post proposal or inquiry has been received. Our editorial team will get back to you within 6 to 12 hours.';
+        statusBox.innerHTML = '<strong>Message Sent!</strong> Thank you for reaching out to Sosoactive Editorial Desk. Our team will review your message and get back to you shortly.';
       }
       contactForm.reset();
     });
