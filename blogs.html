@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>All Community Blogs &amp; Stories - SosoActive</title>
-  <meta name="description" content="Browse all published blogs, social stories, community discussions, technology guides, business insights, interior decor ideas, and health articles on SosoActive.">
+  <title>Community Blogs &amp; Articles - SosoActive</title>
+  <meta name="description" content="Browse community blogs, news updates, technology insights, business strategies, interior decor trends, and health articles on SosoActive.">
   <link rel="canonical" href="https://sosoactive.forum/blogs.html">
   <link rel="stylesheet" href="styles.css">
 
@@ -15,7 +15,7 @@
     "@type": "Blog",
     "name": "SosoActive Community Blogs",
     "url": "https://sosoactive.forum/blogs.html",
-    "description": "Explore all published community posts and social articles on SosoActive."
+    "description": "Official community posts and articles on SosoActive."
   }
   </script>
 </head>
@@ -78,17 +78,17 @@
     <section class="hero-section" style="padding: 3rem 2.5rem; margin-bottom: 2rem;">
       <div class="hero-badge">📚 Community Library</div>
       <h1 class="hero-title" style="font-size: 2.4rem;">
-        Explore All Community <span>Blogs &amp; Stories</span>
+        SosoActive <span>Blogs &amp; Articles</span>
       </h1>
       <p class="hero-lead" style="margin-bottom: 1.5rem;">
-        Discover trending articles, creator insights, software benchmarks, enterprise business strategies, home styling trends, and health guides on <a href="https://sosoactive.forum/" class="main-keyword-link">sosoactive</a>.
+        Welcome to the official blog portal for <a href="https://sosoactive.forum/" class="main-keyword-link">sosoactive</a>. New articles and community updates are indexed continuously across all 5 interest verticals.
       </p>
 
       <!-- Search & Category Filters -->
       <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-top: 1.5rem;">
-        <input type="text" id="blogSearchInput" placeholder="🔍 Search blogs by topic or keyword..." style="flex: 1; min-width: 260px; padding: 0.75rem 1.25rem; border-radius: 9999px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem;">
+        <input type="text" id="blogSearchInput" placeholder="🔍 Search articles..." style="flex: 1; min-width: 260px; padding: 0.75rem 1.25rem; border-radius: 9999px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem;">
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <button class="cat-chip active" onclick="filterBlogs('all')">All Posts</button>
+          <button class="cat-chip active" onclick="filterBlogs('all')">All Categories</button>
           <button class="cat-chip" onclick="filterBlogs('tech')">💻 Tech</button>
           <button class="cat-chip" onclick="filterBlogs('business')">📈 Business</button>
           <button class="cat-chip" onclick="filterBlogs('services')">⚙️ Services</button>
@@ -98,131 +98,14 @@
       </div>
     </section>
 
-    <!-- Blogs Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem;" id="blogGrid">
-      
-      <!-- Blog Card 1 -->
-      <article class="feature-card blog-post-item" data-category="tech" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
-        <img src="assets/images/hero.jpg" alt="Optimizing Critical Rendering Paths in Web Architecture" width="600" height="338" style="width:100%; height:200px; object-fit:cover;">
-        <div style="padding:1.5rem; flex:1; display:flex; flex-direction:column;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem;">
-            <span class="hero-badge" style="margin-bottom:0; font-size:0.75rem;">Technology</span>
-            <span style="font-size:0.8rem; color:var(--text-muted);">⏱️ 8 Min Read</span>
-          </div>
-          <h3 style="font-size:1.25rem; margin-bottom:0.75rem;"><a href="index.html" style="text-decoration:none; color:var(--text-primary);">Optimizing Critical Rendering Paths for High-Performance Platforms</a></h3>
-          <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.25rem; flex:1;">
-            An engineering deep-dive on inline CSS delivery, DOM depth reduction, and non-blocking JavaScript hydration.
-          </p>
-          <div style="display:flex; align-items:center; justify-content:space-between; padding-top:1rem; border-top:1px solid var(--border-color); font-size:0.85rem; color:var(--text-muted);">
-            <span>✍️ SosoActive Tech Desk</span>
-            <span>July 31, 2026</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 2 -->
-      <article class="feature-card blog-post-item" data-category="business" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
-        <img src="assets/images/tech-business.jpg" alt="Capital Efficiency Metrics for SaaS Growth" width="600" height="338" style="width:100%; height:200px; object-fit:cover;">
-        <div style="padding:1.5rem; flex:1; display:flex; flex-direction:column;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem;">
-            <span class="hero-badge" style="margin-bottom:0; font-size:0.75rem; background:rgba(5,150,105,0.1); color:#059669; border-color:rgba(5,150,105,0.2);">Enterprise Business</span>
-            <span style="font-size:0.8rem; color:var(--text-muted);">⏱️ 10 Min Read</span>
-          </div>
-          <h3 style="font-size:1.25rem; margin-bottom:0.75rem;"><a href="index.html" style="text-decoration:none; color:var(--text-primary);">Capital Efficiency Metrics for Series A &amp; B Enterprise Startups</a></h3>
-          <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.25rem; flex:1;">
-            Analyzing Net Revenue Retention (NRR), CAC payback periods, and LTV-to-CAC ratios in shifting markets.
-          </p>
-          <div style="display:flex; align-items:center; justify-content:space-between; padding-top:1rem; border-top:1px solid var(--border-color); font-size:0.85rem; color:var(--text-muted);">
-            <span>✍️ SosoActive Business Desk</span>
-            <span>July 30, 2026</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 3 -->
-      <article class="feature-card blog-post-item" data-category="decor" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
-        <img src="assets/images/lifestyle.jpg" alt="Biophilic Interior Design and Natural Aesthetics" width="600" height="338" style="width:100%; height:200px; object-fit:cover;">
-        <div style="padding:1.5rem; flex:1; display:flex; flex-direction:column;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem;">
-            <span class="hero-badge" style="margin-bottom:0; font-size:0.75rem; background:rgba(217,119,6,0.1); color:#d97706; border-color:rgba(217,119,6,0.2);">Home Decor</span>
-            <span style="font-size:0.8rem; color:var(--text-muted);">⏱️ 7 Min Read</span>
-          </div>
-          <h3 style="font-size:1.25rem; margin-bottom:0.75rem;"><a href="index.html" style="text-decoration:none; color:var(--text-primary);">Sustainable Materials &amp; Biophilic Interior Architecture</a></h3>
-          <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.25rem; flex:1;">
-            How modern architects integrate natural lighting, organic materials, and indoor greenery for healthier living spaces.
-          </p>
-          <div style="display:flex; align-items:center; justify-content:space-between; padding-top:1rem; border-top:1px solid var(--border-color); font-size:0.85rem; color:var(--text-muted);">
-            <span>✍️ SosoActive Design Team</span>
-            <span>July 28, 2026</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 4 -->
-      <article class="feature-card blog-post-item" data-category="services" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
-        <img src="assets/images/guest-post.jpg" alt="B2B Professional Services Delivery Frameworks" width="600" height="338" style="width:100%; height:200px; object-fit:cover;">
-        <div style="padding:1.5rem; flex:1; display:flex; flex-direction:column;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem;">
-            <span class="hero-badge" style="margin-bottom:0; font-size:0.75rem;">Services</span>
-            <span style="font-size:0.8rem; color:var(--text-muted);">⏱️ 9 Min Read</span>
-          </div>
-          <h3 style="font-size:1.25rem; margin-bottom:0.75rem;"><a href="index.html" style="text-decoration:none; color:var(--text-primary);">Evaluating Enterprise B2B Digital Marketing &amp; SLA Models</a></h3>
-          <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.25rem; flex:1;">
-            A step-by-step operational checklist for digital agencies seeking scalable service delivery and client retention.
-          </p>
-          <div style="display:flex; align-items:center; justify-content:space-between; padding-top:1rem; border-top:1px solid var(--border-color); font-size:0.85rem; color:var(--text-muted);">
-            <span>✍️ SosoActive Services Hub</span>
-            <span>July 25, 2026</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 5 -->
-      <article class="feature-card blog-post-item" data-category="health" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
-        <img src="assets/images/lifestyle.jpg" alt="AI Diagnostics and MedTech Innovations" width="600" height="338" style="width:100%; height:200px; object-fit:cover;">
-        <div style="padding:1.5rem; flex:1; display:flex; flex-direction:column;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem;">
-            <span class="hero-badge" style="margin-bottom:0; font-size:0.75rem; background:rgba(8,145,178,0.1); color:#0891b2; border-color:rgba(8,145,178,0.2);">Healthcare</span>
-            <span style="font-size:0.8rem; color:var(--text-muted);">⏱️ 11 Min Read</span>
-          </div>
-          <h3 style="font-size:1.25rem; margin-bottom:0.75rem;"><a href="index.html" style="text-decoration:none; color:var(--text-primary);">AI Diagnostics &amp; Telehealth Infrastructure in Modern Medicine</a></h3>
-          <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.25rem; flex:1;">
-            Evaluating how machine learning models assist clinicians in early disease detection and remote patient care.
-          </p>
-          <div style="display:flex; align-items:center; justify-content:space-between; padding-top:1rem; border-top:1px solid var(--border-color); font-size:0.85rem; color:var(--text-muted);">
-            <span>✍️ SosoActive Health Desk</span>
-            <span>July 22, 2026</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 6 -->
-      <article class="feature-card blog-post-item" data-category="tech" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
-        <img src="assets/images/hero.jpg" alt="Entity Based Knowledge Graph Nodes" width="600" height="338" style="width:100%; height:200px; object-fit:cover;">
-        <div style="padding:1.5rem; flex:1; display:flex; flex-direction:column;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem;">
-            <span class="hero-badge" style="margin-bottom:0; font-size:0.75rem;">Technology</span>
-            <span style="font-size:0.8rem; color:var(--text-muted);">⏱️ 12 Min Read</span>
-          </div>
-          <h3 style="font-size:1.25rem; margin-bottom:0.75rem;"><a href="index.html" style="text-decoration:none; color:var(--text-primary);">Entity-Based Content Networks &amp; Semantic Knowledge Graphs</a></h3>
-          <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.25rem; flex:1;">
-            How natural language processing and topic siloing create strong conceptual authority nodes across modern platforms.
-          </p>
-          <div style="display:flex; align-items:center; justify-content:space-between; padding-top:1rem; border-top:1px solid var(--border-color); font-size:0.85rem; color:var(--text-muted);">
-            <span>✍️ SosoActive AI Lab</span>
-            <span>July 18, 2026</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- Pagination -->
-    <div style="display:flex; justify-content:center; align-items:center; gap:0.5rem; margin-bottom:3rem;">
-      <a href="#" class="cat-chip active" style="padding:0.5rem 1rem;">1</a>
-      <a href="#" class="cat-chip" style="padding:0.5rem 1rem;">2</a>
-      <a href="#" class="cat-chip" style="padding:0.5rem 1rem;">3</a>
-      <a href="#" class="cat-chip" style="padding:0.5rem 1.25rem;">Next Page →</a>
+    <!-- Clean Empty State Container Ready for New Posts -->
+    <div style="text-align: center; padding: 4rem 2rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); margin-bottom: 3rem;" id="emptyState">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">📝</div>
+      <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem;">Blog Publishing Directory Ready</h3>
+      <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 1.5rem auto;">
+        Old sample posts have been cleared. This portal is fully structured and optimized for instant search engine indexing on <strong>sosoactive.forum</strong>.
+      </p>
+      <a href="contact.html" class="btn-contact">Contact Editorial Desk</a>
     </div>
 
   </div>
@@ -263,41 +146,5 @@
   <button class="back-to-top" id="backToTop">↑</button>
 
   <script src="script.js"></script>
-  <script>
-    // Simple filter function for blogs
-    function filterBlogs(cat) {
-      const items = document.querySelectorAll('.blog-post-item');
-      const buttons = document.querySelectorAll('.cat-chip');
-      
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
-
-      items.forEach(item => {
-        if (cat === 'all' || item.getAttribute('data-category') === cat) {
-          item.style.display = 'flex';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-
-    // Simple search filter for blogs
-    const searchInput = document.getElementById('blogSearchInput');
-    if (searchInput) {
-      searchInput.addEventListener('keyup', (e) => {
-        const query = e.target.value.toLowerCase();
-        const items = document.querySelectorAll('.blog-post-item');
-        
-        items.forEach(item => {
-          const text = item.innerText.toLowerCase();
-          if (text.includes(query)) {
-            item.style.display = 'flex';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    }
-  </script>
 </body>
 </html>
