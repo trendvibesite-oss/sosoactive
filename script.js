@@ -89,23 +89,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Media Contact Form Submission Handler
-  const contactForm = document.getElementById('mediaContactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const statusBox = document.getElementById('formStatus');
-      if (statusBox) {
-        statusBox.style.display = 'block';
-        statusBox.style.background = 'rgba(5, 150, 105, 0.1)';
-        statusBox.style.border = '1px solid #059669';
-        statusBox.style.color = '#059669';
-        statusBox.style.padding = '1rem';
-        statusBox.style.borderRadius = '8px';
-        statusBox.style.marginTop = '1rem';
-        statusBox.innerHTML = '<strong>Message Sent!</strong> Thank you for reaching out to Sosoactive Editorial Desk. Our team will review your message and get back to you shortly.';
-      }
-      contactForm.reset();
+  // 6. Blog Search & Category Filtering Functionality
+  const blogSearchInput = document.getElementById('blogSearchInput');
+  const blogItems = document.querySelectorAll('.blog-post-item');
+
+  if (blogSearchInput && blogItems.length > 0) {
+    blogSearchInput.addEventListener('input', () => {
+      const query = blogSearchInput.value.toLowerCase().trim();
+      blogItems.forEach(item => {
+        const title = item.querySelector('h3') ? item.querySelector('h3').textContent.toLowerCase() : '';
+        const excerpt = item.querySelector('p') ? item.querySelector('p').textContent.toLowerCase() : '';
+        if (title.includes(query) || excerpt.includes(query)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
   }
 });
+
+// Category Filter Helper Function
+function filterBlogs(cat) {
+  const items = document.querySelectorAll('.blog-post-item');
+  const catButtons = document.querySelectorAll('.cat-chip');
+
+  catButtons.forEach(btn => btn.classList.remove('active'));
+  
+  // Highlight clicked button
+  event.target.classList.add('active');
+
+  items.forEach(item => {
+    const itemCat = item.getAttribute('data-category');
+    if (cat === 'all' || itemCat === cat) {
+      item.style.display = 'flex';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
