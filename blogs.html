@@ -118,8 +118,8 @@
       </div>
     </section>
 
-    <!-- Published Blog Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem;" id="blogGrid">
+    <!-- Published Blog Grid (3 Columns x 2 Rows = 6 Posts Per Page) -->
+    <div class="blog-grid-3x2" id="blogGrid">
       
       <!-- Clickfor Net Article Card -->
       <article class="feature-card blog-post-item" data-category="tech" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
@@ -168,6 +168,11 @@
       </article>
 
     </div>
+
+    <!-- Pagination Navigation Controls -->
+    <nav class="pagination-container" id="blogPagination" aria-label="Blog Pagination Navigation">
+      <!-- Generated dynamically by script.js -->
+    </nav>
 
   </div>
 

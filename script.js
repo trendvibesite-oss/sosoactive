@@ -115,17 +115,89 @@ function filterBlogs(cat) {
   const catButtons = document.querySelectorAll('.cat-chip');
 
   catButtons.forEach(btn => btn.classList.remove('active'));
-  
-  // Highlight clicked button
-  event.target.classList.add('active');
+  if (event && event.target) {
+    event.target.classList.add('active');
+  }
 
   items.forEach(item => {
     const itemCat = item.getAttribute('data-category');
     if (cat === 'all' || itemCat === cat) {
-      item.style.display = 'flex';
+      item.dataset.filterHidden = 'false';
     } else {
-      item.style.display = 'none';
+      item.dataset.filterHidden = 'true';
     }
   });
+
+  currentBlogPage = 1;
+  renderBlogPagination();
 }
+
+// 7. Interactive Blog Grid Pagination (6 Posts per page: 3 columns x 2 rows)
+let currentBlogPage = 1;
+const blogPostsPerPage = 6;
+
+function renderBlogPagination() {
+  const grid = document.getElementById('blogGrid');
+  if (!grid) return;
+  
+  const allCards = Array.from(grid.querySelectorAll('.blog-post-item'));
+  const visibleCards = allCards.filter(card => card.dataset.filterHidden !== 'true');
+  
+  const totalPages = Math.max(1, Math.ceil(visibleCards.length / blogPostsPerPage));
+  
+  if (currentBlogPage > totalPages) currentBlogPage = totalPages;
+  if (currentBlogPage < 1) currentBlogPage = 1;
+
+  allCards.forEach(card => {
+    if (card.dataset.filterHidden === 'true') {
+      card.style.display = 'none';
+    }
+  });
+
+  visibleCards.forEach((card, index) => {
+    const startIdx = (currentBlogPage - 1) * blogPostsPerPage;
+    const endIdx = startIdx + blogPostsPerPage;
+    if (index >= startIdx && index < endIdx) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  const pagNav = document.getElementById('blogPagination');
+  if (pagNav) {
+    if (totalPages <= 1) {
+      pagNav.style.display = 'none';
+    } else {
+      pagNav.style.display = 'flex';
+      let pagHtml = `<button class="pagination-btn ${currentBlogPage === 1 ? 'disabled' : ''}" onclick="changeBlogPage(-1)" ${currentBlogPage === 1 ? 'disabled' : ''}>&laquo; Previous</button>`;
+      
+      for (let i = 1; i <= totalPages; i++) {
+        pagHtml += `<button class="pagination-num ${i === currentBlogPage ? 'active' : ''}" onclick="setBlogPage(${i})">${i}</button>`;
+      }
+      
+      pagHtml += `<button class="pagination-btn ${currentBlogPage === totalPages ? 'disabled' : ''}" onclick="changeBlogPage(1)" ${currentBlogPage === totalPages ? 'disabled' : ''}>Next &raquo;</button>`;
+      pagNav.innerHTML = pagHtml;
+    }
+  }
+}
+
+function setBlogPage(pageNum) {
+  currentBlogPage = pageNum;
+  renderBlogPagination();
+  const grid = document.getElementById('blogGrid');
+  if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function changeBlogPage(direction) {
+  currentBlogPage += direction;
+  renderBlogPagination();
+  const grid = document.getElementById('blogGrid');
+  if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderBlogPagination();
+});
+
 
