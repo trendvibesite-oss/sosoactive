@@ -1,6 +1,28 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/Pixelspinx-Com",
+      "destination": "/pixelspinx-com",
+      "permanent": true
+    },
+    {
+      "source": "/Pixelspinx-Com.html",
+      "destination": "/pixelspinx-com",
+      "permanent": true
+    },
+    {
+      "source": "/redeepseek",
+      "destination": "/redeepseek-com",
+      "permanent": true
+    },
+    {
+      "source": "/apkek",
+      "destination": "/apkek-org",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
