@@ -1,16 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/redeepseek-com", "destination": "/redeepseek-com.html" },
-    { "source": "/apkek-org", "destination": "/apkek-org.html" },
-    { "source": "/quikconsole-com", "destination": "/quikconsole-com.html" },
-    { "source": "/techtrendery-com-usa", "destination": "/techtrendery-com-usa.html" },
-    { "source": "/grammarvista-com-usa", "destination": "/grammarvista-com-usa.html" },
-    { "source": "/webinbound-com", "destination": "/webinbound-com.html" },
-    { "source": "/wallpostmedia-com", "destination": "/wallpostmedia-com.html" },
-    { "source": "/pixelspinx-com", "destination": "/pixelspinx-com.html" }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
