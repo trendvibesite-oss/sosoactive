@@ -64,4 +64,9 @@ For EVERY new blog article:
 | `success100x-com` | `success100x-mindset-habits.webp` | Daily Habit Formation & Productivity Journaling |
 | `success100x-com` | `success100x-career-business-growth.webp` | Career Strategy & Modern Professional Growth |
 | `success100x-com` | `success100x-finance-wealth.webp` | Financial Planning & Wealth Building Analytics |
+| `wisestudyspot-com` | `wisestudyspot-hero.webp` | Modern Online Learning & Study Resources Workspace |
+| `wisestudyspot-com` | `wisestudyspot-digital-skills-tech.webp` | Digital Skills, SEO, WordPress & Tech Education |
+| `wisestudyspot-com` | `wisestudyspot-web-development-ecommerce.webp` | Web Development & Shopify E-Commerce Setup |
+| `wisestudyspot-com` | `wisestudyspot-learning-path-research.webp` | Practical Learning Path & Source Verification Notes |
+
 
