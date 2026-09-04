@@ -56,3 +56,7 @@ For EVERY new blog article:
 | `glossywise-com` | `glossywise-categories.webp` | Multi-Category Blogging Pillars Architecture |
 | `glossywise-com` | `glossywise-seo-strategy.webp` | SEO Keyword Ranking & Laptop Optimization |
 | `glossywise-com` | `glossywise-creator-monetization.webp` | Creator Branding & Portfolio Building |
+| `uploadarticle-com` | `uploadarticle-hero.webp` | Clean Article Publishing Workspace & Editorial Cover |
+| `uploadarticle-com` | `uploadarticle-categories.webp` | Multi-Category Article Publishing Pillars |
+| `uploadarticle-com` | `uploadarticle-guest-post-submission.webp` | Guest Post Submission Checklist & Editorial Preparation |
+| `uploadarticle-com` | `uploadarticle-seo-strategy.webp` | Search Engine Optimization & Digital PR Analytics |
