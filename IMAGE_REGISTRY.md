@@ -60,3 +60,8 @@ For EVERY new blog article:
 | `uploadarticle-com` | `uploadarticle-categories.webp` | Multi-Category Article Publishing Pillars |
 | `uploadarticle-com` | `uploadarticle-guest-post-submission.webp` | Guest Post Submission Checklist & Editorial Preparation |
 | `uploadarticle-com` | `uploadarticle-seo-strategy.webp` | Search Engine Optimization & Digital PR Analytics |
+| `success100x-com` | `success100x-hero.webp` | Personal Growth & Mindset Journey Workspace |
+| `success100x-com` | `success100x-mindset-habits.webp` | Daily Habit Formation & Productivity Journaling |
+| `success100x-com` | `success100x-career-business-growth.webp` | Career Strategy & Modern Professional Growth |
+| `success100x-com` | `success100x-finance-wealth.webp` | Financial Planning & Wealth Building Analytics |
+
