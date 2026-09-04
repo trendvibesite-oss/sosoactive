@@ -68,5 +68,10 @@ For EVERY new blog article:
 | `wisestudyspot-com` | `wisestudyspot-digital-skills-tech.webp` | Digital Skills, SEO, WordPress & Tech Education |
 | `wisestudyspot-com` | `wisestudyspot-web-development-ecommerce.webp` | Web Development & Shopify E-Commerce Setup |
 | `wisestudyspot-com` | `wisestudyspot-learning-path-research.webp` | Practical Learning Path & Source Verification Notes |
+| `mytecharm-com` | `mytecharm-hero.webp` | Modern Technology, Apps & Digital Guides Workspace |
+| `mytecharm-com` | `mytecharm-apps-software-ai.webp` | Practical Apps, Software, AI Tools & Cybersecurity |
+| `mytecharm-com` | `mytecharm-gadgets-consumer-tech.webp` | Smartphone Gadgets & Consumer Tech Specs Discovery |
+| `mytecharm-com` | `mytecharm-verification-research.webp` | Fact-Checking, Testing Methodology & E-E-A-T Research |
+
 
 
