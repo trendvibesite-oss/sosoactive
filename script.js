@@ -121,7 +121,8 @@ function filterBlogs(cat) {
 
   items.forEach(item => {
     const itemCat = item.getAttribute('data-category');
-    if (cat === 'all' || itemCat === cat) {
+    const categories = itemCat ? itemCat.toLowerCase().split(/[\s,]+/) : [];
+    if (cat === 'all' || categories.includes(cat.toLowerCase())) {
       item.dataset.filterHidden = 'false';
     } else {
       item.dataset.filterHidden = 'true';
