@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sosoactive.forum/sitemap.xml
+Sitemap: https://sosoactive.forum/feed.xml
