@@ -1,0 +1,23 @@
+name: Daily Search Engine Indexer & Ping
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC (11:30 AM IST)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allows manual one-click trigger from GitHub Actions tab
+
+jobs:
+  daily-crawl-submission:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Daily Indexer & Search Engine Pings
+        run: |
+          python scripts/daily_submit_indexer.py
