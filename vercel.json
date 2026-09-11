@@ -3,6 +3,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/Coyyn-com-Business",
+      "destination": "/coyyn-com-business",
+      "permanent": true
+    },
+    {
+      "source": "/Coyyn-com-Business.html",
+      "destination": "/coyyn-com-business",
+      "permanent": true
+    },
+    {
       "source": "/Pixelspinx-Com",
       "destination": "/pixelspinx-com",
       "permanent": true

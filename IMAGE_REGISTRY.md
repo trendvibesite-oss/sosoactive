@@ -76,7 +76,7 @@ For EVERY new blog article:
 | `droven-io-enterprise-tech-innovation` | `droven-io-ai-cloud-automation.webp` | AI Systems, Cloud Computing & Process Automation |
 | `droven-io-enterprise-tech-innovation` | `droven-io-enterprise-analytics-security.webp` | Enterprise Analytics, Business Intelligence & Cybersecurity |
 | `droven-io-enterprise-tech-innovation` | `droven-io-innovation-framework-roi.webp` | Enterprise Innovation Strategy Framework & ROI |
-
-
-
+| `coyyn-com-business` | `coyyn-business-hero.webp` | Coyyn.com Business Guide to Digital Finance & New Economy |
+| `coyyn-com-business` | `coyyn-digital-finance.webp` | Digital Finance & Fintech Capital Analytics Dashboard |
+| `coyyn-com-business` | `coyyn-business-operations.webp` | Collaborative Business Strategy & Operations Management |
 

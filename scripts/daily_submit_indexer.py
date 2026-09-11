@@ -19,6 +19,7 @@ urls_to_submit = [
     f"{BASE_URL}/write-for-us",
     f"{BASE_URL}/about",
     f"{BASE_URL}/contact",
+    f"{BASE_URL}/coyyn-com-business",
     f"{BASE_URL}/droven-io-enterprise-tech-innovation",
     f"{BASE_URL}/mytecharm-com",
     f"{BASE_URL}/wisestudyspot-com",
