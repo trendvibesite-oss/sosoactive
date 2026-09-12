@@ -111,22 +111,15 @@ def main():
     print("SOSOACTIVE DAILY SEARCH ENGINE CRAWL & INDEX SUBMISSION")
     print("="*65)
 
-    # 1. Ping Google WebSub for RSS
+    # 1. Ping Google WebSub for RSS (Googlebot Real-time discovery)
     ping_websub_google()
 
-    # 2. Ping Google Sitemap
-    sitemap_url = f"{BASE_URL}/sitemap.xml"
-    encoded_sitemap = urllib.parse.quote(sitemap_url, safe='')
-    ping_url(f"https://www.google.com/ping?sitemap={encoded_sitemap}", "Google Sitemap Ping")
-
-    # 3. Ping Bing Sitemap
-    ping_url(f"https://www.bing.com/ping?sitemap={encoded_sitemap}", "Bing Sitemap Ping")
-
-    # 4. Submit IndexNow Batch
+    # 2. Submit IndexNow Batch (Bing, Yandex, Seznam real-time crawler dispatch)
     submit_indexnow()
 
     print("\n" + "="*65)
-    print("SUCCESS: All 24 pages and sitemaps submitted for daily search crawling!")
+    print("SUCCESS: All URLs submitted to Google WebSub and IndexNow networks!")
+    print("NOTE: Google Sitemap crawling is handled automatically via GSC & robots.txt.")
     print("="*65)
 
 if __name__ == "__main__":
