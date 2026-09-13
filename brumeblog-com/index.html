@@ -112,28 +112,28 @@
 </head>
 <body>
 
-  <!-- Reading Progress Bar -->
-  <div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
+  <!-- Top Progress Bar -->
+  <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
 
-  <!-- Main Header -->
+  <!-- Header Navigation -->
   <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="brand-logo">
-        <svg viewBox="0 0 100 100" width="32" height="32"><rect width="100" height="100" rx="22" fill="#4f46e5"/><path d="M28 66 L44 34 L58 66 L74 34" stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="nav-container">
+      <a href="/" class="brand-logo" aria-label="SosoActive Homepage">
+        <svg viewBox="0 0 100 100" width="38" height="38"><rect width="100" height="100" rx="22" fill="#4f46e5"/><path d="M28 66 L44 34 L58 66 L74 34" stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="74" cy="34" r="5" fill="#059669"/></svg>
         <span>soso<span class="highlight">active</span></span>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="desktop-nav">
-        <a href="/tech">Technology</a>
-        <a href="/business" class="active">Business</a>
-        <a href="/blogs">All Blogs</a>
-        <a href="/about">About</a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/blogs" class="nav-link">Blogs</a></li>
+          <li><a href="/tech" class="nav-link">Tech</a></li>
+          <li><a href="/business" class="nav-link active">Business</a></li>
+          <li><a href="/about" class="nav-link">About Us</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
 
-      <!-- Actions -->
       <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">🌓</button>
         <a href="/contact" class="btn-contact">Contact Us</a>
@@ -145,42 +145,48 @@
   <!-- Mobile Drawer Navigation -->
   <nav class="mobile-nav" id="mobileNav">
     <a href="/">Home</a>
+    <a href="/blogs">All Blogs</a>
     <a href="/tech">Technology</a>
     <a href="/business">Business</a>
-    <a href="/blogs">All Blogs</a>
-    <a href="/write-for-us">Write For Us</a>
-    <a href="/about">About</a>
+    <a href="/about">About Us</a>
     <a href="/contact">Contact</a>
+    <a href="/write-for-us">Write For Us</a>
   </nav>
 
-  <!-- Main Container -->
+  <!-- Main Content Layout -->
   <div class="main-wrapper">
+
+    <!-- Category Breadcrumb Header -->
+    <section class="hero-section" style="padding: 2rem; margin-bottom: 2rem;">
+      <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.9rem; color:var(--text-muted); margin-bottom:0.75rem;">
+        <a href="/" style="color:var(--text-secondary); text-decoration:none;">Home</a> &rsaquo;
+        <a href="/business" style="color:var(--accent-indigo); font-weight:600; text-decoration:none;">Business</a> &rsaquo;
+        <span>BrumeBlog.com</span>
+      </div>
+      <h1 class="hero-title" style="font-size: 2.2rem; margin-bottom: 0.75rem;">
+        BrumeBlog.com: Complete Guide to the Website, Content, Categories & What to Know
+      </h1>
+      <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">
+        <span>✍️ By <strong>Sophia Chen</strong> (Digital Media Editor &amp; Content Strategy Lead)</span>
+        <span>📅 September 13, 2026</span>
+        <span>⏱️ 16 Min Read</span>
+        <span style="color:var(--accent-emerald); font-weight:600;">📈 Business Category</span>
+      </div>
+    </section>
+
+    <!-- Article Content Layout -->
     <div class="content-layout">
       
-      <!-- Article Content Column -->
-      <main class="primary-content">
-
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb-trail" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span class="breadcrumb-sep">&raquo;</span>
-          <a href="/business">Business</a>
-          <span class="breadcrumb-sep">&raquo;</span>
-          <span>BrumeBlog.com</span>
-        </nav>
-
-        <h1 class="article-title" style="margin-bottom: 1rem; font-size: 2.2rem; line-height: 1.25;">
-          BrumeBlog.com: Complete Guide to the Website, Content, Categories & What to Know
-        </h1>
-
-        <div class="article-meta-header" style="margin-bottom: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.9rem; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
-          <span>✍️ By <strong>Sophia Chen</strong> (Digital Media Editor &amp; Content Strategy Lead)</span>
-          <span>📅 Published: September 13, 2026</span>
-          <span>🏷️ Category: <a href="/business" style="color: var(--accent-indigo); text-decoration: none; font-weight: 600;">Business</a></span>
-          <span>⏱️ 16 Min Read</span>
-        </div>
-
+      <!-- Primary Article Content -->
+      <main class="article-container">
+        
         <article class="prose">
+          <!-- Featured Hero Image -->
+          <figure style="margin: 0 0 2rem 0;">
+            <img src="/assets/images/brumeblog-hero.webp" alt="BrumeBlog.com Complete Guide to Website Content Categories and Multi-Topic Publishing Architecture" width="800" height="450" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" loading="eager" decoding="async">
+            <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;">BrumeBlog.com comprehensive analysis covering digital publishing models, category navigation, and content evaluation standards.</figcaption>
+          </figure>
+
           <p>If you have recently seen BrumeBlog.com in Google search results, you may be wondering what the website actually is, what kind of content it publishes, and whether it is worth exploring.</p>
 
           <p>The short answer is that BrumeBlog.com is a broad, multi-category online publishing website. It is not built around one narrow subject. Instead, the site brings together articles covering areas such as business, education, finance, health, lifestyle, technology, travel, fashion, pets, real estate, sports, AI, crypto, home, law, trading and other topics.</p>
@@ -196,11 +202,6 @@
           <p>A broad content library can be useful for general reading and topic discovery, but it does not automatically mean every article is an expert source on its subject. Readers should evaluate individual articles based on the topic, author, evidence, publication date and purpose.</p>
 
           <p>This guide takes a closer look at BrumeBlog.com, including what it is, what categories it covers, who it is for, how the content is organized, its strengths and limitations, and how readers should evaluate the information they find there.</p>
-
-          <figure style="margin: 2.5rem 0 2rem 0; text-align: center;">
-            <img src="/assets/images/brumeblog-hero.webp" alt="BrumeBlog.com Complete Guide to Website Content Categories and Multi-Topic Publishing Architecture" width="800" height="450" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" loading="eager" decoding="async">
-            <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;">BrumeBlog.com comprehensive analysis covering digital publishing models, category navigation, and content evaluation standards.</figcaption>
-          </figure>
 
           <hr style="margin: 2.5rem 0; border: none; border-top: 1px solid var(--border-color);">
 
