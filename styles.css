@@ -1023,7 +1023,9 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-.recent-card-img-wrapper {
+.recent-card-img-wrapper,
+.recent-card-img-wrap {
+  display: block;
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -1031,14 +1033,17 @@ body {
   background: var(--bg-tertiary);
 }
 
-.recent-card-img {
+.recent-card-img,
+.recent-card img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.recent-card:hover .recent-card-img {
+.recent-card:hover .recent-card-img,
+.recent-card:hover img {
   transform: scale(1.04);
 }
 
