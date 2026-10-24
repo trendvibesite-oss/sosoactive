@@ -99,12 +99,6 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://sosoactive.forum/write-for-us</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://sosoactive.forum/about</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -112,9 +106,9 @@
   </url>
   <url>
     <loc>https://sosoactive.forum/contact</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Published High-Priority Blog Articles -->
